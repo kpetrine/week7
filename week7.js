@@ -166,3 +166,10 @@ function willBuyDrink(isHotOutside, moneyInPocket){
 willBuyDrink(true, 5)
 // #13 Create a function of your own that solves a problem. In comments, write what the function does and why 
 //you created it.
+function orderTakeOut(amTired, moneyInPocket){
+    console.log("Parameters", amTired, moneyInPocket);
+    let takeOut = amTired = true && moneyInPocket > 30;
+    console.log("Order take out?", takeOut);
+    return takeOut;  
+}
+orderTakeOut(true, 50)
